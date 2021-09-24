@@ -4,10 +4,11 @@ import Testimonials from "../testimonial/TestimonialAnimation";
 import Services from "../service/ServiceAnimation";
 // import Awards from "../award/AwardsAnimation";
 import toadCycle from '../../assets/ToadCycle.mp4';
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 import '../../assets/scss/youtubeVideo.scss';
 import Collapsible from 'react-collapsible';
 import '../../assets/scss/Faq.scss';
+import YoutubeEmbed from "../YouTubeEmbed";
 
 
 const About = () => {
@@ -205,11 +206,12 @@ const About = () => {
                     <div
                         // className={'player-wrapper'}
                     >
-                        <ReactPlayer
-                            width="100%"
-                            // className="react-player"
-                                     url='https://youtu.be/N1a5SFmOglA'
-                        />
+                        {/*<ReactPlayer*/}
+                        {/*    width="100%"*/}
+                        {/*    // className="react-player"*/}
+                        {/*             url='https://youtu.be/N1a5SFmOglA'*/}
+                        {/*/>*/}
+                        <YoutubeEmbed embedId={'N1a5SFmOglA'}/>
                     </div>
                     {/*<Awards />*/}
                     {/* End Awards */}
