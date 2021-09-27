@@ -31,7 +31,7 @@ const Slider = () => {
             <section id="home" className="home-banner">
                 <div className="hb-top-fixed d-flex">
                     <div className="hb-info">
-                        {/*<a href="tel:+04 6545-9535-6515">{conctInfo.phone}</a>*/}
+                        <a href="tel:+1-855-92-TOADS">{conctInfo.phone}</a>
                         <a href="mailto:mail%20to:ibthemes21@gmail.com,com">
                             {conctInfo.email}
                         </a>

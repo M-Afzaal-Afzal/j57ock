@@ -13,11 +13,6 @@ import YoutubeEmbed from "../YouTubeEmbed";
 
 const About = () => {
 
-    const onReady = (event) => {
-        // access to player in all event handlers via event.target
-        event.target.pauseVideo();
-    }
-
     const questions = [
         {
             id: 1,
@@ -49,6 +44,11 @@ const About = () => {
                                             are all active in the crypto space and will always have a place in our heart
                                             for toad hodlers in any future projects.`
         },
+        {
+            id: 4,
+            question: 'Do you have a toll free number I can call?',
+            ans: 'Yes, 1-855-92-TOADS',
+        }
 
     ]
 
@@ -208,6 +208,24 @@ const About = () => {
                     {/*<Awards />*/}
                     {/* End Awards */}
 
+
+                    {/* separated */}
+                    <div
+                        className="separated"
+                        style={{
+                            backgroundImage: `url(${
+                                process.env.PUBLIC_URL + "img/border-dark.png"
+                            })`,
+                        }}
+                    ></div>
+                    {/* End separated */}
+
+                    <div id={'team'} className="title">
+                        <h3>Team</h3>
+                    </div>
+
+                    <Services/>
+
                     {/* separated */}
                     <div
                         className="separated"
@@ -226,22 +244,6 @@ const About = () => {
                     <Testimonials/>
                     {/* End Testimonaial */}
 
-                    {/* separated */}
-                    <div
-                        className="separated"
-                        style={{
-                            backgroundImage: `url(${
-                                process.env.PUBLIC_URL + "img/border-dark.png"
-                            })`,
-                        }}
-                    ></div>
-                    {/* End separated */}
-
-                    <div id={'team'} className="title">
-                        <h3>Team</h3>
-                    </div>
-
-                    <Services/>
 
                     {/* End .row */}
 

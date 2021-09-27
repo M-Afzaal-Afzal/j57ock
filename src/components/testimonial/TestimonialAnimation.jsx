@@ -45,6 +45,13 @@ export default function SimpleSlider() {
       delayAnimation: "200",
     },
     // {
+    //   imageName: "YouTube.png",
+    //   desc: `  Check out the No Fun Toads YouTube for aniamted NFT News Updates, songs, skits and tons of no fun content.`,
+    //   // reviewerName: "Nancy Byers",
+    //   // designation: "CEO at ib-themes",
+    //   delayAnimation: "",
+    // },
+    // {
     //   imageName: "YouTube",
     //   desc: `Check out the No Fun Toads YouTube for aniamted NFT News Updates, songs, skits and tons of no fun content.`,
     //   reviewerName: "Janiaya kiaram",
