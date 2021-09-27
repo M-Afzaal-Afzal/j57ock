@@ -18,6 +18,40 @@ const About = () => {
         event.target.pauseVideo();
     }
 
+    const questions = [
+        {
+            id: 1,
+            question: 'What is the difference between a toad and a frog?',
+            ans: 'Not to sure honestly. You should google it.'
+        },
+        {
+            id: 2,
+            question: 'Do you have a roadmap?',
+            ans: <>
+                <p>
+                    No, but we have two guiding stars.
+                </p>
+                <p>
+                    Help more people do what they love (25% community decided artist grants).
+                </p>
+                <p>
+                    Help more artist, NFT collectors and everyone struggling with #mental health
+                    (25% to community decided charity and initiatives)
+                </p>
+            </>
+        },
+        {
+            id: 3,
+            question: 'Do you plan to continue making content after mint?',
+            ans: ` Yes, of course! We love making weird videos and fun things for the
+                                            ecosystem. We also will be seeding other artists with our grants and
+                                            hopefully they incorporate the toads to further raise awareness. Also, we
+                                            are all active in the crypto space and will always have a place in our heart
+                                            for toad hodlers in any future projects.`
+        },
+
+    ]
+
     return (
         <>
             <section className="section theme-light dark-bg">
@@ -67,44 +101,20 @@ const About = () => {
                                 </div>
                                 <div className="about-text">
                                     {/*  todo add the faq there*/}
-                                    <Collapsible triggerTagName={'div'}
-                                                 trigger="What is the difference between a toad and a frog?"
-                                    >
-                                        <p>
-                                           Not to sure honestly. You should google it.
-                                        </p>
 
-                                    </Collapsible>
+                                    {
+                                        questions.map(({question,ans,id}) => (
+                                            <Collapsible key={id} triggerTagName={'div'}
+                                                         trigger={question}
+                                            >
+                                                <p>
+                                                    {ans}
+                                                </p>
 
-                                    <Collapsible triggerTagName={'div'} trigger=" Do you have a roadmap?
-">
-                                        <p>
-                                            No, but we have two guiding stars.
+                                            </Collapsible>
+                                        ))
+                                    }
 
-                                        </p>
-                                        <p>
-                                            Help more people do what they love (25% community decided artist grants).
-
-                                        </p>
-                                        <p>
-                                            Help more artist, NFT collectors and everyone struggling with #mental health
-                                            (25% to community decided charity and initiatives)
-
-                                        </p>
-
-                                    </Collapsible>
-
-                                    <Collapsible triggerTagName={'div'} trigger=" Do you plan to continue making content after mint?">
-                                        <p>
-                                            Yes, of course! We love making weird videos and fun things for the ecosystem. We also will be seeding other artists with our grants and hopefully they incorporate the toads to further raise awareness. Also, we are all active in the crypto space and will always have a place in our heart for toad hodlers in any future projects.
-                                        </p>
-                                    </Collapsible>
-
-                                    <Collapsible triggerTagName={'div'} trigger=" Do you have a toll free number I can call?">
-                                        <p>
-                                             Yes, 1-855-92-TOADS
-                                        </p>
-                                    </Collapsible>
                                     {/*  <p>*/}
                                     {/*    I'm a Freelancer Front-end Developer with over 3 years of*/}
                                     {/*    experience. I'm from San Francisco. I code and create web*/}
@@ -179,24 +189,6 @@ const About = () => {
                     />
 
                     {/* End separated */}
-                    <div id={'team'} className="title">
-                        <h3>Team</h3>
-                    </div>
-
-                    <Services/>
-
-                    {/* End .row */}
-
-                    {/* separated */}
-                    <div
-                        className="separated"
-                        style={{
-                            backgroundImage: `url(${
-                                process.env.PUBLIC_URL + "img/border-dark.png"
-                            })`,
-                        }}
-                    ></div>
-                    {/* End separated */}
 
                     <div id={'videos'} className="title">
                         <h3>Featured Video</h3>
@@ -233,6 +225,26 @@ const About = () => {
 
                     <Testimonials/>
                     {/* End Testimonaial */}
+
+                    {/* separated */}
+                    <div
+                        className="separated"
+                        style={{
+                            backgroundImage: `url(${
+                                process.env.PUBLIC_URL + "img/border-dark.png"
+                            })`,
+                        }}
+                    ></div>
+                    {/* End separated */}
+
+                    <div id={'team'} className="title">
+                        <h3>Team</h3>
+                    </div>
+
+                    <Services/>
+
+                    {/* End .row */}
+
                 </div>
             </section>
         </>

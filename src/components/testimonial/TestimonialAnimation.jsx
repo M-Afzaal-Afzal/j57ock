@@ -31,32 +31,26 @@ export default function SimpleSlider() {
 
   const TestimonilContent = [
     {
-      imageName: "team-1",
-      desc: `  Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s.`,
-      reviewerName: "Nancy Byers",
-      designation: "CEO at ib-themes",
+      imageName: "YouTube.png",
+      desc: `  Check out the No Fun Toads YouTube for aniamted NFT News Updates, songs, skits and tons of no fun content.`,
+      // reviewerName: "Nancy Byers",
+      // designation: "CEO at ib-themes",
       delayAnimation: "",
     },
     {
-      imageName: "team-2",
-      desc: ` Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s.`,
-      reviewerName: "Jara Afsari",
-      designation: "CEO at ib-themes",
+      imageName: "PeerThrough.jpg",
+      desc: ` Peer behind the scenes and watch the vlogs and blogs of the people building the toads and exploring the crypto space. `,
+      // reviewerName: "Jara Afsari",
+      // designation: "CEO at ib-themes",
       delayAnimation: "200",
     },
-    {
-      imageName: "team-4",
-      desc: ` Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s.`,
-      reviewerName: "Janiaya kiaram",
-      designation: "Visual Designer",
-      delayAnimation: "400",
-    },
+    // {
+    //   imageName: "YouTube",
+    //   desc: `Check out the No Fun Toads YouTube for aniamted NFT News Updates, songs, skits and tons of no fun content.`,
+    //   reviewerName: "Janiaya kiaram",
+    //   designation: "Visual Designer",
+    //   delayAnimation: "400",
+    // },
   ];
 
   return (
@@ -72,14 +66,14 @@ export default function SimpleSlider() {
             <div className="testimonial-01 media">
               <div className="avatar">
                 <img
-                  src={`img/testimonial/${val.imageName}.jpg`}
+                  src={`img/testimonial/${val.imageName}`}
                   alt="review comments"
                 ></img>
               </div>
               <div className="media-body">
                 <p>{val.desc}</p>
-                <h6>{val.reviewerName}</h6>
-                <span>{val.designation}</span>
+                {/*<h6>{val.reviewerName}</h6>*/}
+                {/*<span>{val.designation}</span>*/}
               </div>
             </div>
           </div>
