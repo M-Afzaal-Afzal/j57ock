@@ -31,7 +31,7 @@ const Slider = () => {
             <section id="home" className="home-banner">
                 <div className="hb-top-fixed d-flex">
                     <div className="hb-info">
-                        <a href="tel:+04 6545-9535-6515">{conctInfo.phone}</a>
+                        {/*<a href="tel:+04 6545-9535-6515">{conctInfo.phone}</a>*/}
                         <a href="mailto:mail%20to:ibthemes21@gmail.com,com">
                             {conctInfo.email}
                         </a>
@@ -76,23 +76,16 @@ const Slider = () => {
                                     </TextLoop>
                                 </div>
 
-                                <p
-                                    className="desc"
-                                    data-aos="fade-up"
-                                    data-aos-duration="1200"
-                                    data-aos-delay="300"
-                                >
-                                    {sliderContent.description}
-                                </p>
+
                                 <div
-                                    className="mt-4"
-                                    data-aos="fade-up"
+                                    className="my-4"
+                                    // data-aos="fade-up"
                                     data-aos-duration="1200"
-                                    data-aos-delay="400"
+                                    data-aos-delay="200"
                                 >
                                     <button style={{
                                         background: '#c21921',
-                                    }} onClick={counterHandler.bind(this,'sub')} className={`px-btn px-btn-white`}>
+                                    }} onClick={counterHandler.bind(this, 'sub')} className={`px-btn px-btn-white`}>
                                         -
                                     </button>
                                     <button
@@ -107,10 +100,49 @@ const Slider = () => {
                                     </button>
                                     <button style={{
                                         background: '#27CE0D',
-                                    }} onClick={counterHandler.bind(this,'add')} className={`px-btn px-btn-white`}>
+                                    }} onClick={counterHandler.bind(this, 'add')} className={`px-btn px-btn-white`}>
                                         +
                                     </button>
                                 </div>
+
+                                <div className="my-4"
+                                    // data-aos="fade-up"
+                                     data-aos-duration="1200"
+                                     data-aos-delay="200"
+                                >
+                                    <button
+                                        style={{
+                                            background: 'rgb(32 159 255)',
+                                        }}
+                                        className="px-btn px-btn-white"
+                                        // href="img/resume.png"
+                                        // download
+                                    >
+                                        {/*Connect to metamask ({counter})*/}
+                                        Mint Date October 5 12pm PST
+                                    </button>
+                                </div>
+
+                                <p
+                                    className="desc"
+                                    // data-aos="fade-up"
+                                    data-aos-duration="1200"
+                                    data-aos-delay="300"
+                                >
+                                    {/*{sliderContent.description}*/}
+                                    20% of sales donated toward #mentalhealth charities
+                                </p>
+
+                                <p
+                                    className="desc"
+                                    // data-aos="fade-up"
+                                    data-aos-duration="1200"
+                                    data-aos-delay="300"
+                                >
+                                    {/*{sliderContent.description}*/}
+                                    20% of sales given as creator grants
+                                </p>
+
                             </div>
                         </div>
                     </div>
