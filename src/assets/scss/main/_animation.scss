@@ -24,6 +24,7 @@
   -webkit-animation: slideTop 4s infinite both;
   animation: slideTop 4s infinite both;
 }
+
 @keyframes slideTop {
   from {
     opacity: 0;
@@ -34,6 +35,7 @@
     transform: none;
   }
 }
+
 @keyframes slideLeft {
   from {
     opacity: 0;

@@ -9,6 +9,7 @@ body {
   line-height: $px-line-height;
   font-size: $px-font-size;
   font-weight: 300;
+
   &.theme-light {
     background: $px-white;
     color: $px-body-light;
@@ -36,6 +37,7 @@ a {
     text-decoration: none;
   }
 }
+
 h1,
 h2,
 h3,
@@ -44,6 +46,7 @@ h5,
 h6 {
   color: #0b0b13;
 }
+
 mark {
   background-image: linear-gradient($px-theme, $px-theme);
   background-size: 100% 3px;
@@ -53,12 +56,15 @@ mark {
   padding: 0;
   color: currentColor;
 }
+
 .overlay {
   position: relative;
+
   > div {
     position: relative;
     z-index: 2;
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -70,6 +76,7 @@ mark {
     z-index: 1;
   }
 }
+
 @media (min-width: 1400px) {
   .container-xxl,
   .container-xl,
@@ -80,26 +87,32 @@ mark {
     max-width: 1140px;
   }
 }
+
 .ml-auto,
 .mx-auto {
   margin-left: auto !important;
 }
+
 .media {
   display: flex !important;
   -ms-flex-align: start;
   align-items: flex-start;
 }
+
 .media-body {
   -ms-flex: 1;
   flex: 1;
 }
+
 a {
   text-decoration: none;
 }
+
 button,
 a {
   cursor: pointer !important;
 }
+
 .invalid-feedback,
 .valid-feedback {
   width: 100%;
@@ -107,9 +120,11 @@ a {
   font-size: 15px;
   display: block;
 }
+
 .invalid-feedback {
   color: #dc3545 !important;
 }
+
 .scroll_up {
   position: fixed;
   right: 20px;
@@ -137,6 +152,7 @@ a {
     transform: translateY(-4px);
   }
 }
+
 // react masonry
 .my-masonry-grid {
   display: -webkit-box; /* Not needed if autoprefixing */
@@ -148,6 +164,7 @@ a {
     min-height: 740px;
   }
 }
+
 .my-masonry-grid_column {
   padding-left: 20px; /* gutter size */
   background-clip: padding-box;
@@ -159,6 +176,7 @@ a {
   background: grey;
   margin-top: 20px;
 }
+
 /* ----------------------
 *	Loading
 ---------------------------*/
@@ -171,6 +189,7 @@ a {
   background: $px-theme;
   z-index: 99999;
 }
+
 .load-circle {
   position: fixed;
   top: 0;
@@ -180,10 +199,12 @@ a {
   margin: auto;
   width: 50px;
   height: 50px;
+
   span {
     display: inline-block;
     width: 64px;
     height: 64px;
+
     &:after {
       content: " ";
       display: block;
@@ -212,6 +233,7 @@ a {
 ---------------------------*/
 .owl-dots {
   text-align: center;
+
   .owl-dot {
     display: inline-block;
     vertical-align: top;
@@ -222,11 +244,14 @@ a {
     @include transition(ease all 0.55s);
     border-radius: 50%;
     margin: 0 5px;
+
     .theme-light & {
       border-color: $px-dark;
     }
+
     &.active {
       background: $px-white;
+
       .theme-light & {
         background: $px-dark;
       }

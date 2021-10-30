@@ -36,11 +36,11 @@ const Footer = () => {
           <p>
             © {new Date().getFullYear()} copyright{" "}
             <a
-              href="https://themeforest.net/user/ib-themes/portfolio"
+              href="#"
               target="_blank"
               rel="noreferrer"
             >
-              No Fun Toads
+              14L
             </a>{" "}
             all right reserved
           </p>

@@ -8,6 +8,7 @@ import {
   // FiFileText,
   // FiPhoneOutgoing,
     FiTwitter,
+    FiGrid
 } from "react-icons/fi";
 
 import {FaDiscord,FaQuestion} from 'react-icons/fa';
@@ -46,7 +47,8 @@ const Header = () => {
           <div className="hl-top">
             <div className="hl-logo">
               <Link to="/">
-                <img src={Logo} alt="Logo"/>
+                K
+                {/*<img src={Logo} alt="Logo"/>*/}
               </Link>
             </div>
           </div>
@@ -54,7 +56,7 @@ const Header = () => {
 
           <Scrollspy
             className="nav nav-menu"
-            items={["home", "faq", "videos", "team"]}
+            items={["home", "faq", "portfolio", "team"]}
             currentClassName="active"
             offset={-30}
           >
@@ -96,14 +98,14 @@ const Header = () => {
             <li>
               <a
                   className="nav-link"
-                  href="#videos"
+                  href="#portfolio"
                   data-tip
-                  data-for="VIDEOS"
+                  data-for="portfolio"
                   onClick={handleClick}
               >
-                <RiVideoLine />
-                <ReactTooltip id="VIDEOS" place="top" type="dark" effect="float">
-                  <span>Videos</span>
+                <FiGrid />
+                <ReactTooltip id="PORTFOLIO" place="top" type="dark" effect="float">
+                  <span>Portfolio</span>
                 </ReactTooltip>
               </a>
             </li>
@@ -140,26 +142,26 @@ const Header = () => {
                 </ReactTooltip>
               </a>
             </li>
-            <li>
-              <a
-                className="nav-link"
-                rel={'noreferrer'}
-                href="https://t.co/3p0rxCcp8Q?amp=1"
-                target={'_blank'}
-                data-for="DISCORD"
-                onClick={handleClick}
-              >
-                <FaDiscord />
-                <ReactTooltip
-                  id="DISCORD"
-                  place="top"
-                  type="dark"
-                  effect="float"
-                >
-                  <span>Discord</span>
-                </ReactTooltip>
-              </a>
-            </li>
+            {/*<li>*/}
+            {/*  <a*/}
+            {/*    className="nav-link"*/}
+            {/*    rel={'noreferrer'}*/}
+            {/*    href="https://t.co/3p0rxCcp8Q?amp=1"*/}
+            {/*    target={'_blank'}*/}
+            {/*    data-for="DISCORD"*/}
+            {/*    onClick={handleClick}*/}
+            {/*  >*/}
+            {/*    <FaDiscord />*/}
+            {/*    <ReactTooltip*/}
+            {/*      id="DISCORD"*/}
+            {/*      place="top"*/}
+            {/*      type="dark"*/}
+            {/*      effect="float"*/}
+            {/*    >*/}
+            {/*      <span>Discord</span>*/}
+            {/*    </ReactTooltip>*/}
+            {/*  </a>*/}
+            {/*</li>*/}
           </Scrollspy>
         </div>
       </header>

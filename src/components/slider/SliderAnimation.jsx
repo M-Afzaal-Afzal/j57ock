@@ -3,11 +3,11 @@ import TextLoop from "react-text-loop";
 
 const conctInfo = {
     phone: "+1-855-92-TOADS",
-    email: "nofuntoads@gmail.com",
+    email: "admin@kpfs.co.uk",
 };
 
 const sliderContent = {
-    name: "No Fun Toad shop",
+    name: "King Pipework and Fabrication Services",
     designation: "Full-stack Developer",
     description: ` `,
     btnText: "Connect to metamask",
@@ -152,7 +152,7 @@ const Slider = () => {
                     className="hb-me"
                     style={{
                         backgroundImage: `url(${
-                            process.env.PUBLIC_URL + "img/slider/home-banner.png"
+                            process.env.PUBLIC_URL + "img/slider/home-banner.jpg"
                         })`,
                     }}
                 />

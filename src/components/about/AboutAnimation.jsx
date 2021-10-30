@@ -9,6 +9,8 @@ import '../../assets/scss/youtubeVideo.scss';
 import Collapsible from 'react-collapsible';
 import '../../assets/scss/Faq.scss';
 import YoutubeEmbed from "../YouTubeEmbed";
+import Portfolio from '../Portfolio';
+import Team from '../team/Team';
 
 
 const About = () => {
@@ -190,20 +192,20 @@ const About = () => {
 
                     {/* End separated */}
 
-                    <div id={'videos'} className="title">
-                        <h3>Featured Video</h3>
+                    <div id={'portfolio'} className="title">
+                        <h3>Portfolio</h3>
                     </div>
 
                     {/*todo add the video there*/}
                     <div
                         // className={'player-wrapper'}
                     >
+                        <Portfolio/>
                         {/*<ReactPlayer*/}
                         {/*    width="100%"*/}
                         {/*    // className="react-player"*/}
                         {/*             url='https://youtu.be/N1a5SFmOglA'*/}
                         {/*/>*/}
-                        <YoutubeEmbed embedId={'N1a5SFmOglA'}/>
                     </div>
                     {/*<Awards />*/}
                     {/* End Awards */}
@@ -221,10 +223,11 @@ const About = () => {
                     {/* End separated */}
 
                     <div id={'team'} className="title">
-                        <h3>Team</h3>
+                        <h3>Our Team</h3>
                     </div>
 
-                    <Services/>
+
+                    <Team/>
 
                     {/* separated */}
                     <div
@@ -238,7 +241,7 @@ const About = () => {
                     {/* End separated */}
 
                     <div className="title">
-                        <h3>Additional Content</h3>
+                        <h3>Proud to be working with</h3>
                     </div>
 
                     <Testimonials/>
