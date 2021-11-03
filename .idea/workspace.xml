@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a541b45-27d0-4c2e-9732-e2a0025cbde6" name="Changes" comment="done with the basic app">
+    <list default="true" id="1a541b45-27d0-4c2e-9732-e2a0025cbde6" name="Changes" comment="build updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slider/SliderAnimation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/SliderAnimation.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Krishna/covid19-react" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -45,6 +47,8 @@
       <workItem from="1635516371098" duration="431000" />
       <workItem from="1635516808376" duration="255000" />
       <workItem from="1635572122230" duration="6283000" />
+      <workItem from="1635612455517" duration="493000" />
+      <workItem from="1635969594221" duration="378000" />
     </task>
     <task id="LOCAL-00001" summary="done with the basic app">
       <created>1635610780302</created>
@@ -60,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635610793790</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="build updated">
+      <created>1635612485441</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1635612485441</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,9 +87,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done with the basic app" />
-    <option name="LAST_COMMIT_MESSAGE" value="done with the basic app" />
+    <MESSAGE value="build updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="build updated" />
   </component>
 </project>

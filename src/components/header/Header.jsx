@@ -11,10 +11,10 @@ import {
     FiGrid
 } from "react-icons/fi";
 
-import {FaDiscord,FaQuestion} from 'react-icons/fa';
+import {FaDiscord,FaQuestion,FaHome} from 'react-icons/fa';
 import {RiVideoLine} from 'react-icons/ri';
 
-import Logo from '../../assets/logo.svg';
+import Logo from '../../assets/KLogo.png';
 
 import {RiTeamLine} from 'react-icons/ri';
 import {GiFrog} from 'react-icons/gi';
@@ -47,8 +47,11 @@ const Header = () => {
           <div className="hl-top">
             <div className="hl-logo">
               <Link to="/">
-                K
-                {/*<img src={Logo} alt="Logo"/>*/}
+                {/*K*/}
+                <img style={{
+                  width: '60%',
+                  height: 'auto',
+                }} src={Logo} alt="Logo"/>
               </Link>
             </div>
           </div>
@@ -68,7 +71,7 @@ const Header = () => {
                 data-for="HOME"
                 onClick={handleClick}
               >
-                <GiFrog />
+                <FaHome />
                 <ReactTooltip id="HOME" place="top" type="dark" effect="float">
                   <span>Home</span>
                 </ReactTooltip>
